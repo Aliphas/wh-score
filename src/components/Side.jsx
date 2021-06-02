@@ -18,7 +18,7 @@ let Side = (props) => {
 
 
   return (
-    <div className={s.side} >{vp}
+    <div className={s.side} >
       <Input stringClass={s.faction} stringTitle={'Faction: '} inputClass={s.input} onClick={Input.inputClick} onBlur={Input.inputBlur} defaultInputValue={defaultInputValue} value={Input.inputValue} />
       <Number stringClass={s.string} stringTitle='CP' numberClass={s.stringValue} numberChange={Number.numberChange} count={1} objCount={setCountCP} num={cp}/>
 
