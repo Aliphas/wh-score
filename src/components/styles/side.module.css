@@ -1,0 +1,36 @@
+ .side {
+  font-size: 25px;
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+  text-align: left;
+  padding: 25px;
+}
+.input {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 25px;
+  max-width: 250px;
+}
+input {
+  font-size: 25px;
+  display: inline;
+  width: 250px
+}
+.faction, .string {
+  display: inline-block;
+  color: blue;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.stringValue {
+  display: inline-block;
+  cursor: pointer;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+

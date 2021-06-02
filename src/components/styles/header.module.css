@@ -1,0 +1,30 @@
+.header {
+  display: inline-block;
+  font-size: 40px;
+  width: 100%;
+}
+.mission {
+  font-size: 40px;
+  display: inline-block;
+  width: 500px;
+}
+.mission input {
+  font-size: 40px;
+  display: inline-block;
+  width: 500px;
+}
+.round { 
+  color: blue;
+}
+.roundValue {
+  cursor: pointer;
+}
+.round, .roundValue {
+  display: inline-block;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+
