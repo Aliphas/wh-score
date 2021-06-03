@@ -15,7 +15,7 @@ const Side = (props) => {
 
   return (
     <div className={s.side} >
-      <p className={s.faction, s.string}>Faction: &nbsp;</p><Input className={s.faction} defaultValue={inputValue}/><br/>
+      <p className={s.faction}>Faction: &nbsp;</p><Input className={s.factionValue} defaultValue={inputValue}/><br/>
       <p className={s.string}>CP: &nbsp;</p>
       <Number numberClass={s.stringValue} numberChange={Number.numberChange} count={1} setNumber={setCountCP} number={cp}/>
       <p className={s.string}>VP: &nbsp;</p>{vp}<br/>

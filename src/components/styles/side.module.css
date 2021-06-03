@@ -32,6 +32,20 @@ input {
   user-select: none;
 }
 .faction {
+  font-size: 35px;
+  display: inline-block;
+  display: inline-block;
+  height: 40px;
+  color: rgba(9, 9, 196, 0.733);
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
   margin-bottom: 55px;
+}
+.factionValue {
+  font-size: 35px;
+  cursor: pointer;
+
 }
 
