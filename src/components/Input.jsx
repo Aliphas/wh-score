@@ -1,17 +1,25 @@
 import { useState } from "react"
 
-let Input = (props) => {
-  const [inputValue, setInputValue] = useState(props.defaultInputValue)
-  let inputClick = (event) => {
-    if(event.target.type !== 'text') setInputValue(<input autoFocus defaultValue={inputValue !== props.defaultInputValue?inputValue : ''}/>)
-  }
-  let inputBlur = (event) => {
-    if(!event.target.value) setInputValue(props.defaultInputValue)
-    else setInputValue(event.target.value)
-  } 
-  return <span>
-    <p className={props.stringClass}>{props.stringTitle}&nbsp;</p>
-    <div className={props.inputClass} onClick={(event) => inputClick(event)} onBlur={(event) => inputBlur(event)} >{inputValue}</div><br/>
-  </span> 
+const Input = (props) => {
+
+  const {defaultValue, className} = props
+
+  const [isInputActive, setInputACtive ] = useState(false)
+  const [value, setValue] = useState('')
+
+  const handleToggle = () => setInputACtive(!isInputActive)
+  const handleChange = (event) => setValue(event.target.value)
+
+  return <div style = {{display: 'inline-block'}} >
+    {isInputActive ? 
+      <input 
+        autoFocus 
+        spellCheck='false' 
+        onBlur={handleToggle}
+        onChange ={handleChange}
+        value={value} />
+        : <span className={className} onClick={handleToggle}>{value || defaultValue}</span>
+    }
+  </div> 
 }
 export default Input
