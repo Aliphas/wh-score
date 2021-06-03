@@ -15,17 +15,17 @@ const Side = (props) => {
 
   return (
     <div className={s.side} >
-      <Input className={s.faction} defaultValue={inputValue}/><br/>
+      <p className={s.faction, s.string}>Faction: &nbsp;</p><Input className={s.faction} defaultValue={inputValue}/><br/>
       <p className={s.string}>CP: &nbsp;</p>
       <Number numberClass={s.stringValue} numberChange={Number.numberChange} count={1} setNumber={setCountCP} number={cp}/>
       <p className={s.string}>VP: &nbsp;</p>{vp}<br/>
       <p className={s.string}>PR: &nbsp;</p>
       <Number numberClass={s.stringValue} numberChange={Number.numberChange} count={5} setNumber={setCountPR} number={pr}/>
-      <Input className={s.string} defaultValue='CP'/>: &nbsp;
+      <Input className={s.string} defaultValue='Sec1'/>: &nbsp;
       <Number numberClass={s.stringValue} numberChange={Number.numberChange} count={1} setNumber={setCount1} number={sec1}/>
-      <Input className={s.string} defaultValue='CP'/>: &nbsp;
+      <Input className={s.string} defaultValue='Sec2'/>: &nbsp;
       <Number numberClass={s.stringValue} numberChange={Number.numberChange} count={1} setNumber={setCount2} number={sec2}/>
-      <Input className={s.string} defaultValue='CP'/>: &nbsp;
+      <Input className={s.string} defaultValue='Sec3'/>: &nbsp;
       <Number numberClass={s.stringValue} numberChange={Number.numberChange} count={1} setNumber={setCount3} number={sec3}/>
     </div>
   )
